@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivUserReceiverAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/man_receiver"
+        app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUserReceiverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/ivUserReceiverAvatar"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        tools:text="Cường Vq" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUserReceiverContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUserReceiverName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/ivUserReceiverAvatar"
+        android:background="@drawable/shape_bg_gray_corner_16"
+        android:gravity="start"
+        android:maxWidth="150dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:text="Hello" />
+
+</RelativeLayout>
